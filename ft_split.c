@@ -12,12 +12,12 @@
 
 #include "libft.h"
 
-int	is_sep(char character, char sep)
+static int	is_sep(char character, char sep)
 {
 	return (character == sep);
 }
 
-int	count_words(const char *str, char sep)
+static int	count_words(const char *str, char sep)
 {
 	int	i;
 	int	count;
@@ -40,7 +40,7 @@ int	count_words(const char *str, char sep)
 	return (count);
 }
 
-char	*allocate_word(const char *str, char sep)
+static char	*allocate_word(const char *str, char sep)
 {
 	int		i;
 	char	*word;
